@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+      <link rel="stylesheet" href="style.css" />
+    <title>Chat app</title>
+</head>
+<body>
+    <h1 class="title"> Chat 💬</h1>
+    <div class="main">
+        <div class="name">
+            <span>
+               <!---<i class="far fa-user"></i>  -->
+               
+               <!-- <i class="fa-solid fa-user"></i>   -->
+               
+                
+            </span>
+            <input type="text" id="name-input" class="name-input" value=" 👤 anonymous" maxlength="20">
+        </div>
+
+        <ul class="message-container" id="message-container">
+         <!---   <li class="message-left">
+                <p class="message">
+                    lorem impsum
+                    <span>bluebird 💿 26 july</span>
+                </p>
+            </li>  -->
+
+            <li class="message-left">
+                <p class= "message">
+                    lorem impsum
+                    <span>bluebird   🔘 26 july 10:40 </span>
+                </p>
+            </li>   
+
+            <li class="message-right">
+                <p class= "message">
+                    lorem impsum
+                    <span>bluebird   🔘 26 july 10:40 </span>
+                </p>
+            </li>
+
+               <li class="message-feedback">
+                   <p class= "feedback" id="feedback"> user2 is typing a message</p>
+               </li>
+
+        </ul>
+
+
+        <form  class="message-form"  id="message-form">
+         <input type="text"  name="message" id="message-input" class="message-input"> 
+         <div class="v-divider"></div>
+         <button type="submit" class="send-button">
+             send  <span><i class="fa-regular fa-paper-plane-top"></i></span>
+         </button>
+        </form>
+
+      
+    </div>
+    <h3 class="clients-total" id="client-total">Total Clients : 2  </h3>
+
+
+
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js" crossorigin="anonymous"></script>
+    <script src= "main.js"></script>
+</body>
+</html>
